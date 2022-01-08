@@ -20,7 +20,7 @@ app.use(express.static("public"));
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://mark:Dj3Hfhdi7jrhf5dvda34g@cluster0.z8zd9.mongodb.net/todoList');
+  await mongoose.connect('secretURL');
 }
 
 app.get("/", getDefaultList);
